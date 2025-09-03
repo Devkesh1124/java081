@@ -1,0 +1,23 @@
+package unit3;
+
+import java.util.*;
+
+public class arraylist2 {
+    public static void main(String[] args) {
+        ArrayList<String> products=new ArrayList<>();
+        System.out.println("enter no  of products: ");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            products.add(sc.next());
+        }
+        Collections.sort(products);
+        Iterator it=products.iterator();
+
+        while(it.hasNext()){
+            System.out.println(it.next());
+
+        }
+
+    }
+}

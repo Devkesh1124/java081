@@ -1,3 +1,5 @@
+package unit1;
+
 import java.util.Scanner;
 public class MyException {
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class MyException {
             z=x/y;
             System.out.println("EXCEPTION NoT Occurs");
         }
-        catch(Exception e){
+        catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }
         finally{
